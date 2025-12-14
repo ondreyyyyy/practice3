@@ -1,0 +1,26 @@
+neverov@neverov-vivobook16x:~/Рабочий стол/prac3$ curl -X POST http://localhost:7432/user -H "Content-Type: cation/json"   -d '{"username": "andrey1"}'
+neverov@neverov-vivobook16x:~/Рабочий стол/prac3$ curl -X POST http://localhost:7432/user -H "Content-Type: cation/json"   -d '{"username": "andrey2"}'
+neverov@neverov-vivobook16x:~/Рабочий стол/prac3$  curl -XPOST http://localhost:7432/order   -H "Content-Type: application/json"   -H "X-USER-KEY: M2L5KbaUTk7TZFHKWo8i5BfhLMv8j6N0"   -d '{             
+    "pair_id": 1,
+    "quantity": 100.0,
+    "price": 0.01,
+    "type": "buy"
+  }'
+neverov@neverov-vivobook16x:~/Рабочий стол/prac3$  curl -XPOST http://localhost:7432/order   -H "Content-Type: application/json"   -H "X-USER-KEY: tENMwwW7XEE8payjy2sAr1OOpg7sJIq1"   -d '{             
+    "pair_id": 1,
+    "quantity": 600.0,
+    "price": 0.01,
+    "type": "sell"
+  }'
+neverov@neverov-vivobook16x:~/Рабочий стол/prac3$  curl -X POST http://localhost:7432/order   -H "Content-Type: application/json"   -H "X-USER-KEY: M2L5KbaUTk7TZFHKWo8i5BfhLMv8j6N0"   -d '{
+    "pair_id": 1,
+    "quantity": 300.0,
+    "price": 0.01,
+    "type": "buy"
+  }'
+neverov@neverov-vivobook16x:~/Рабочий стол/prac3$ curl -X POST http://localhost:7432/order   -H "Content-Type: application/json"   -H "X-USER-KEY: M2L5KbaUTk7TZFHKWo8i5BfhLMv8j6N0"   -d '{
+    "pair_id": 1,
+    "quantity": 300.0,
+    "price": 0.01,
+    "type": "buy"
+  }'
